@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+<script>
+function myFunction() {
+var x =parseInt(document.getElementById("string").value);
+var z =parseInt(document.getElementById("strings").value);
+ var result = x + z;
+            document.getElementById("y").innerHTML = result;   
+
+}
+</script>
+
+</head>
+
+<body>
+<center>
+
+<h2>Addition of two numbers</h2>
+<br>
+
+<br>
+
+<label>enter the value of first number:
+
+<input type="text" id="string" ></label><br><br>
+<label>enter the value of second number:
+
+<input type="text" id="strings" ></label><br><br>
+<button onclick="myFunction()">sum</button>
+<p id="y"></p>
+
+</script>
+
+</center>
+
+</body>
+</html>
