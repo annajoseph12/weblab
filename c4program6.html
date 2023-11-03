@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body style="text-align:center;">
+	<h3>
+		<u>change the color of background just clicking on the button</u>
+	</h3>
+	<button onclick="myFunc()">
+		set color
+	</button>
+	<h2 id="GFG" style="color:green;"></h2>
+	<script>
+		let result = document.getElementById("GFG");
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+		function myFunc() {
+			changeColor('yellow');
+			result.innerHTML = "Background Color changed";
+		}	 
+	</script>
+</body>
+</html>
